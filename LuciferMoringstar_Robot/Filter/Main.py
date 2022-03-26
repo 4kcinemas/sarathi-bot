@@ -83,7 +83,7 @@ async def filter(client, message):
             )
             poster=None
             if API_KEY:
-                poster=await get_poster(search)
+                poster= https://telegra.ph/file/253d9cc3b22fc79d5eb71.jpg
             if poster:
                 await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
 
@@ -102,7 +102,7 @@ async def filter(client, message):
         )
         poster=None
         if API_KEY:
-            poster=await get_poster(search)
+            poster=https://telegra.ph/file/253d9cc3b22fc79d5eb71.jpg
         if poster:
             await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
         else:
@@ -148,7 +148,7 @@ async def group(client, message):
             )
             poster=None
             if API_KEY:
-                poster=await get_poster(search)
+                poster=https://telegra.ph/file/253d9cc3b22fc79d5eb71.jpg
             if poster:
                 await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
             else:
@@ -166,7 +166,7 @@ async def group(client, message):
         )
         poster=None
         if API_KEY:
-            poster=await get_poster(search)
+            poster=https://telegra.ph/file/253d9cc3b22fc79d5eb71.jpg
         if poster:
             await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
         else:
