@@ -53,7 +53,7 @@ async def filter(client, message):
     if 2 < len(message.text) < 100:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**💠 𝖬𝗈𝗏𝗂𝖾 : {search}**\n**💠 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖻𝗒 : {message.from_user.mention}**\n**©️ 𝖦𝗋𝗈𝗎𝗉 : {message.chat.title}**"
+        mo_tech_yt = f"**💠 𝖬𝗈𝗏𝗂𝖾 : {search}**\n\n**💠 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖻𝗒 : {message.from_user.mention}**\n\n**©️ 𝖦𝗋𝗈𝗎𝗉 : {message.chat.title}**"
         files = await get_filter_results(query=search)
         if files:
             for file in files:
@@ -85,7 +85,7 @@ async def filter(client, message):
             if API_KEY:
                 poster= await get_poster(search)
             if poster:
-                await message.reply_photo(photo='https://telegra.ph/file/253d9cc3b22fc79d5eb71.jpg', caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo='https://telegra.ph/file/505e51a7baa3f4077db9c.jpg', caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
                 await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
@@ -104,7 +104,7 @@ async def filter(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo='https://telegra.ph/file/253d9cc3b22fc79d5eb71.jpg', caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo='https://telegra.ph/file/505e51a7baa3f4077db9c.jpg', caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
         else:
             await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
 
@@ -115,7 +115,7 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**💠 𝖬𝗈𝗏𝗂𝖾 : {search}**\n**💠 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖻𝗒 : {message.from_user.mention}**\n**©️ 𝖦𝗋𝗈𝗎𝗉 : {message.chat.title}**"
+        mo_tech_yt = f"**💠 𝖬𝗈𝗏𝗂𝖾 : {search}**\n\n**💠 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖻𝗒 : {message.from_user.mention}**\n\n**©️ 𝖦𝗋𝗈𝗎𝗉 : {message.chat.title}**"
         nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
@@ -150,7 +150,7 @@ async def group(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo='https://telegra.ph/file/253d9cc3b22fc79d5eb71.jpg', caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo='https://telegra.ph/file/505e51a7baa3f4077db9c.jpg', caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
             else:
                 await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
             return
@@ -168,7 +168,7 @@ async def group(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo='https://telegra.ph/file/253d9cc3b22fc79d5eb71.jpg', caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo='https://telegra.ph/file/505e51a7baa3f4077db9c.jpg', caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
         else:
             await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
 
